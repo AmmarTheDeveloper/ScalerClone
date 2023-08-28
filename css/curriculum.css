@@ -1,0 +1,421 @@
+#curriculum {
+    background: #e8f2fe;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+#curriculum .main-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+#curriculum .main-container > h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+#curriculum .main-container .container .tabs {
+    display: flex;
+    column-gap: 20px;
+    flex: 1;
+    width: 100%;
+}
+
+#curriculum .main-container .container .tabs .tab {
+    cursor: pointer;
+    background: white;
+    padding: 20px;
+    width: calc(100% / 3 - 20px);
+    margin-bottom: 20px;
+}
+
+#curriculum .main-container .container .tabs .tab.active {
+    background: #cae0fe;
+    color: #387ef7;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+}
+
+#curriculum .main-container .container .tabs .tab p {
+    font-size: 3rem;
+}
+
+#curriculum .main-container .container .tabs .tab p:nth-child(2) {
+    font-size: 1.8rem;
+}
+
+#curriculum .main-container .container .tab-content {
+    display: flex;
+    column-gap: 30px;
+    padding: 20px;
+    background: #cae0fe;
+}
+
+#curriculum .main-container .container .tab-content :where(.contents, .description-container) {
+    flex: 1;
+}
+
+#curriculum .main-container .container .tab-content .content .row {
+    margin-bottom:15px;
+    cursor: pointer !important;
+}
+
+#curriculum .main-container .container .tab-content .content {
+    display: none;
+}
+
+#curriculum .main-container .container .tab-content .content.active {
+    display: block;
+}
+
+#curriculum .main-container .container .tab-content .content .row .col-container .col:nth-child(2) p:nth-child(2) {
+    font-size: 2.6rem;
+    text-align: center;
+    display: none;
+}
+
+#curriculum .main-container .container .tab-content .content .row .col-container {
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    border-radius: 0.8rem;
+    align-items: center;
+    column-gap: 10px;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+#curriculum .main-container .container .tab-content .content .row.active .col-container {
+    background: #387ef7;
+    color: white;
+    border-left: 10px solid var(--orange);
+}
+
+#curriculum .main-container .container .tab-content .content .row .description-wrapper {
+    display: none;
+}
+
+#curriculum .main-container .container .tab-content .content .row .col h1 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+#curriculum .main-container .container .tab-content .content .row .col p {
+    font-size: 1.8rem;
+    font-weight: 500;
+
+}
+
+#curriculum .main-container .container .tab-content .content .row .col:first-child {
+    flex: 1;
+}
+
+#curriculum .main-container .container .tab-content .content .row .col:nth-child(2) {
+    width: 25%;
+    text-align: start;
+}
+
+#curriculum .main-container .container .tab-content .content .row .col:nth-child(2) p {
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+#curriculum .main-container .container .tab-content .description-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+#curriculum .main-container .container .tab-content .description-container .description-division {
+    height:600px;
+    display: none;
+}
+
+#curriculum .main-container .container .tab-content .description-container .description-division.active {
+    display: block;
+}
+
+#curriculum .main-container .container .tab-content .description-wrapper {
+    background: #387ef7;
+    padding: 20px;
+    border-radius: 5px;
+    color: var(--white);
+    position: relative;
+    height: 100%;
+}
+
+#curriculum .main-container .container .tab-content .description-wrapper .description {
+    max-height:90%;
+    overflow: auto;
+}
+
+#curriculum .main-container .container .tab-content .description-wrapper .description p.small {
+    font-size: 1.4rem;
+    margin: 10px 0;
+    color: var(--f0f0f0);
+}
+
+#curriculum .main-container .container .tab-content .description-wrapper .description h1.title {
+    font-size: 1.8rem;
+    color: var(--orange);
+    font-weight: 500;
+}
+
+#curriculum .main-container .container .tab-content .description-wrapper .description p.or {
+    font-style: italic;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.8rem;
+    margin: 10px 0;
+}
+
+#curriculum .main-container .container .tab-content .description .header {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+#curriculum .main-container .container .tab-content .description hr {
+    background: var(--white);
+    margin: 15px 0;
+}
+
+#curriculum .main-container .container .tab-content .description ul {
+    padding-left: 3rem;
+}
+
+#curriculum .main-container .container .tab-content .description .list {
+    list-style-type: none;
+}
+
+#curriculum .main-container .container .tab-content .description .list>li.heading {
+    position: relative;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+#curriculum .main-container .container .tab-content .description .list li {
+    margin: 7px 0;
+}
+
+#curriculum .main-container .container .tab-content .description .list ul {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+#curriculum .main-container .container .tab-content .description .list>li.heading:before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: -20px;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 6px;
+    background: white;
+    border-radius: 50%;
+}
+
+#curriculum .main-container .container .tab-content .description-container .next {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 20px;
+    border-radius: 5px;
+    background: #387ef7;
+}
+
+#curriculum .main-container .container .tab-content .description-container .description-wrapper .next {
+    color: var(--orange);
+    text-decoration: underline;
+    font-size: 1.6rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#curriculum .main-container .container .tab-content .description-container .downloadBtn {
+    width: 100%;
+}
+
+#curriculum .main-container .container .tab-content .description-container .downloadBtn button {
+    padding: 10px 20px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+#curriculum .main-container .container .tab-content .description-wrapper {
+    display: none;
+}
+
+#curriculum .main-container .container .tab-content .description-wrapper.active {
+    display: block;
+}
+
+/* resonpsive design starts  here  */
+@media screen and (max-width:768px) {
+    #curriculum {
+        padding-inline: 10px;
+    }
+
+    #curriculum .main-container .container .tabs {
+        column-gap:5px;
+    }
+
+    #curriculum .main-container .container .tabs .tab {
+        width: calc(100% / 3);
+    }
+
+    #curriculum .main-container .container .tabs .tab p:first-child {
+        font-size: 2rem;
+    }
+
+    #curriculum .main-container .container .tabs .tab p:nth-child(2) {
+        font-size: 1.4rem;
+    }
+
+    #curriculum .main-container .container .tab-content .description-container .description-division,
+    #curriculum .main-container .container .tab-content .description-container .description-division {
+        display: none !important;
+    }
+
+    #curriculum .main-container .container .tab-content .row .description-wrapper {
+        display: none;
+        margin-top: 10px;
+        max-height: fit-content;
+    }
+
+    #curriculum .main-container .container .tab-content .row .description-wrapper .next a {
+        font-size: 1.5rem;
+        text-decoration: underline;
+        color: var(--orange);
+        text-underline-offset: 3px;
+    }
+    #curriculum .main-container .container .tab-content .content .row .col-container{
+        padding:1.5rem;
+    }
+    #curriculum .main-container .container .tab-content .row.active .col-container {
+        border-left: unset !important;
+        border-top:7px solid  var(--orange);
+        border-top-left-radius:5px;
+        border-top-right-radius:5px;
+        border-bottom-left-radius:0;
+        border-bottom-right-radius:0;
+    }
+
+    #curriculum .main-container .container .tab-content {
+        flex-direction: column;
+    }
+
+    #curriculum .main-container .container .tab-content .description-container .description-wrapper {
+        display: none;
+        /* large screen description wrapper  will hide  */
+    }
+
+    #curriculum .main-container .container .tab-content .content .row .col-container .col:nth-child(2) {
+        width: fit-content;
+    }
+
+    #curriculum .main-container .container .tab-content .content .row .col-container .col:nth-child(2) p:nth-child(2) {
+        display: block;
+        margin-top: 10px;
+        transition: transform 0.3s ease;
+    }
+
+    #curriculum .main-container .container .tab-content .content .row.active .col-container .col:nth-child(2) p:nth-child(2) {
+        transform: rotate(180deg);
+    }
+
+    #curriculum .main-container .container .tab-content .content .row .description-wrapper {
+        display: block;
+        /*small screen description wraper will visible */
+        max-height: 0;
+        height: 0;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        pointer-events: none;
+        opacity: 0;
+        transition: all 0.3s ease;
+        background: var(--white);
+        color: black;
+    }
+
+    #curriculum .main-container .container .tab-content .content .row.active .description-wrapper {
+        max-height: 510px;
+        height: fit-content;
+        opacity: 1;
+        pointer-events: auto;
+        background: #387ef7;
+        color: var(--white);
+        padding: 20px;
+        border-top:1px solid var(--ccc);
+        cursor:text;
+        overflow:auto;
+        border-top-left-radius:0 !important;
+        border-top-right-radius:0 !important;
+        border-bottom-left-radius:5px;
+        border-bottom-right-radius:5px;
+    }
+
+    #curriculum .main-container .container .tab-content .row .description-wrapper .next {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    #curriculum {
+        padding-inline: 3px;
+    }
+
+    #curriculum .main-container .container .tabs {
+        column-gap: 5px;
+    }
+
+    #curriculum .main-container .container .tabs .tab {
+        padding-inline: 10px;
+    }
+
+    #curriculum .main-container .container .tabs .tab p:first-child {
+        font-size: 1.6rem;
+    }
+
+    #curriculum .main-container .container .tabs .tab p:nth-child(2) {
+        font-size: 1.2rem;
+    }
+    #curriculum .main-container .container .tab-content .content .row .col h1 {
+        font-size: 1.4rem;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+    
+    #curriculum .main-container .container .tab-content .content .row .col p {
+        font-size: 1.6rem;
+        font-weight: 500;
+    
+    }
+}
+
+@media screen and (max-width:400px) {
+    #curriculum .main-container .container .tabs {
+        column-gap:3px;
+    }
+    #curriculum .main-container .container .tabs .tab > *{
+        text-overflow:ellipsis;
+        overflow:hidden;
+    }
+}
+
+@media screen and (max-width:350px){
+    #curriculum .main-container .container .tab-content .description ul{
+        padding-left:2.2rem;
+    }
+    #curriculum .main-container .container .tab-content .content .row.active .description-wrapper{
+        padding:1.5rem;
+    }
+}

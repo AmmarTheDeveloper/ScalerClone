@@ -1,0 +1,107 @@
+#career{
+    padding:40px 20px;
+}
+#career .main-container .container .cards{
+    margin-top:40px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+}
+#career .main-container .container h1.heading{
+    margin-bottom:10px;
+}
+#career .main-container .container .cards .card{
+    border:1px solid #a9bad2;
+    border-radius:1rem;
+    padding:2rem;
+    text-align:center;
+    flex:1;
+}
+#career .main-container .container .cards .card .content p{
+    font-size:1.8rem;
+    font-weight:500;
+    color:#5b6f81;
+}
+#career .main-container .container .cards .card .image img{
+    width:70px;
+}
+/* alumni design starts here  */
+#alumni{
+    padding:20px;
+    margin-top:40px;
+}
+#alumni .main-container .container h1.heading{
+    margin-bottom:30px;
+}
+#alumni .main-container .container .images{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+}
+#alumni .main-container .container .images .img{
+    width:calc(100% / 7 - 30px);
+}
+#alumni .main-container .container .images .img img{
+    max-width:100%;
+    transition:all 1s ease;
+}
+#alumni .main-container .container .images .img img:hover{
+    transform:scale(1.1);
+}
+#career-roadmap{
+    margin:25px 0;
+    background:#e7f3ff;
+    padding:20px;
+}
+#career-roadmap .main-container .container{
+    padding:25px 0;
+    text-align:center;
+}
+#career-roadmap .main-container .container h1.heading{
+    margin-bottom:25px;
+}
+#career-roadmap .main-container .container button{
+    padding:10px 30px;
+    width:fit-content;
+    max-width:100%;
+}
+/* responsive design starts here  */
+@media screen and (max-width:1023px){
+    #alumni .main-container .container .images .img{
+        width:calc(100% / 6 - 40px);
+    }
+}
+@media screen and (max-width:900px){
+    #alumni .main-container .container .images .img{
+        width:calc(100% / 5 - 40px);
+    }
+}
+@media screen and (max-width:700px){
+    #alumni .main-container .container .images{
+        gap:30px;
+    }
+    #alumni .main-container .container .images .img{
+        width:calc(100% / 4 - 30px);
+    }
+}
+@media screen and (max-width:500px){
+    #alumni .main-container .container .images .img{
+        width:calc(100% / 3 - 30px);
+    }
+}
+@media screen and (max-width:350px){
+    #alumni .main-container .container .images .img{
+        width:calc(100% / 2 - 30px);
+    }
+}
+@media screen and (max-width:220px){
+    #alumni .main-container .container .images .img{
+        width:100%;
+    }
+}
+@media screen and (max-width:790px){
+    #career .main-container .container .cards .card{
+        flex:100%;
+    }
+}

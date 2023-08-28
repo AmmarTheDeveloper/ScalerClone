@@ -1,0 +1,1386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions | AmmarTech</title>
+    <!-- html title icon (favicon) link  -->
+    <link rel="icon" type="image/x-icon" href="images/logo2.png">
+    <!-- fontawesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- navbar css file link  -->
+    <link rel="stylesheet" href="css/navbar.css" />
+    <!-- main css file link  -->
+    <link rel="stylesheet" href="css/faqs.css">
+    <!-- css login signup css file link  -->
+    <link rel="stylesheet" href="css/login-signup.css">
+    <!-- footer css file link  -->
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body>
+    <div class="navbar-alt"></div>
+    <div class="navbar">
+        <div class="main-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="">
+            </a>
+            <div class="nav-container">
+                <nav>
+                    <a href="" class="mentor-link">Be a mentor</a>
+                </nav>
+                <div class="nav-btns">
+
+                    <div class="google-play">
+                        <div class="google-play-icon">
+                            <img class="playstore-icon" src="images/google-play-icon.png" alt="">
+                            <div class="google-play-link">
+                                <div class="content">
+                                    <p>Learn Coding on AmmarTech App</p>
+                                    <a href="">
+                                        <img src="images/google-play.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="qr-code">
+                                    <img src="images/qrcode.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="btn apply-btn signup-btn" type="button">APPLY NOW</button>
+                    <button class="btn login-btn" type="button">Login</button>
+                    <a href="tel:+919892564710" class="call">
+                        <span class="icon-container">
+                            <i class="fa-solid fa-phone"></i>
+                        </span>
+                        <span class="call-details">
+                            <p>Talk To Our Experts</p>
+                            <p class="nubmer">+919892564710</p>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="nav-menu-btn">
+                <a href="">
+                    <img src="images/google-play.png" alt="">
+                </a>
+                <div class="lines">
+                    <div class="line line-1"></div>
+                    <div class="line line-2"></div>
+                    <div class="line line-3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="login-signup-container">
+        <div class="container signup">
+            <div class="close">
+                <i class="fa-sharp fa-solid fa-xmark"></i>
+            </div>
+            <form action="">
+                <h1 class="heading">
+                    Ready to become a <b>Rockstar Developer?</b>
+                </h1>
+                <div class="inputs">
+                    <div class="name input">
+                        <label for="name">Full Name<span class="star">*</span></label>
+                        <input type="text" placeholder="Enter your name" id="name" required>
+                    </div>
+                    <div class="email input">
+                        <label for="email-input">Email<span class="star">*</span></label>
+                        <input type="email" placeholder="Enter your email" id="email-input" required>
+                        <span class="error"></span>
+                    </div>
+                    <div class="phone">
+                        <label for="phone-input">Phone Number<span class="star">*</span></label>
+                        <p class="light">OTP will be sent to this number for verification</p>
+                        <div class="two-input">
+                            <input type="text" class="signup-phone" value="+91" disabled>
+                            <div class="mobile-container">
+                                <input type="number" placeholder="Enter your mobile number" required id="phone-input">
+                                <span class="error"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="graduation input">
+                        <label for="graduation">Graduation Year<span class="star">*</span></label>
+                        <input type="number" required class="graudation-field" placeholder="Year of Graduation"
+                            id="graduation">
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="SIGN UP" class="btn btn-crimson">
+                    </div>
+                </div>
+                <div class="account">
+                    <p class="small">
+                        By creating an account I have read and agree to AmmarTech's <a href="">Terms</a> and <a
+                            href="">Privacy Policy</a>
+                    </p>
+                    <p class="big">
+                        Already a member? <button type="button" class="login-btn">LOG IN</button>
+                    </p>
+                </div>
+                <div class="or">
+                </div>
+                <div class="social-media">
+                    <p>Log in using</p>
+                    <div class="icons">
+                        <a href="" class="icon facebook">
+                            <img src="images/facebook.png" alt="">
+                        </a>
+                        <a href="" class="icon linked-in">
+                            <img src="images/linked-in-icon.png" alt="">
+                        </a>
+                        <a href="" class="icon github">
+                            <img src="images/github.png" alt="">
+                        </a>
+                        <a href="" class="icon google">
+                            <img src="images/google-icon.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="container login">
+            <div class="close">
+                <i class="fa-sharp fa-solid fa-xmark"></i>
+            </div>
+            <div class="form-container">
+                <h1 class="heading">Login</h1>
+                <p class="subtitle">or <button type="button" class="signup-btn">create your AmmarTech account</button>
+                </p>
+
+                <form action="" class="phone-container active" id="mobile">
+                    <label for="phone-field">Mobile Number<span class="star">*</span></label>
+                    <div class="two-input">
+                        <input type="text" class="signup-phone" value="+91" disabled>
+                        <input type="number" required placeholder="Enter your mobile number" id="phone-field">
+                        <span class="error"></span>
+                    </div>
+                    <div class="btns">
+                        <input type="submit" class="btn btn-crimson" value="Login" />
+                        <button type="button" class="email-btn">continue using email</button>
+                    </div>
+                </form>
+
+                <form class="email-container">
+                    <div class="email input">
+                        <label for="email">Email<span class="star">*</span></label>
+                        <input type="email" required placeholder="Enter your email" id="email">
+                    </div>
+                    <div class="password input">
+                        <label for="password">Password<span class="star">*</span></label>
+                        <input type="password" required placeholder="Enter your password" id="password">
+                        <span class="error"></span>
+                    </div>
+                    <div class="forget">
+                        <a href="">Forget Password?</a>
+                    </div>
+                    <div class="btns">
+                        <input type="submit" class="btn btn-crimson" value="Login" />
+                        <button type="button" class="phone-btn">continue using mobile</button>
+                    </div>
+                </form>
+
+                <div class="or">
+                </div>
+                <div class="social-media">
+                    <p>Log in using</p>
+                    <div class="icons">
+                        <a href="" class="icon facebook">
+                            <img src="images/facebook.png" alt="">
+                        </a>
+                        <a href="" class="icon linked-in">
+                            <img src="images/linked-in-icon.png" alt="">
+                        </a>
+                        <a href="" class="icon github">
+                            <img src="images/github.png" alt="">
+                        </a>
+                        <a href="" class="icon google">
+                            <img src="images/google-icon.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- faqs section starts here  -->
+    <section id="faqs">
+        <div class="main-container">
+            <div class="container">
+                <h1 class="main-heading">
+                    Frequently Asked Questions
+                </h1>
+                <p class="light">
+                    Answers to the mostly commonly asked questions about AmmarTech Academy
+                </p>
+                <div class="row tab-closed">
+                    <div class="col col-1">
+                        <span class="active">Program</span>
+                        <span>Curriculum</span>
+                        <span>Teaching</span>
+                        <span>Teaching Assistants</span>
+                        <span>Entrance Test</span>
+                        <span>Mentors</span>
+                        <span>Placement Support</span>
+                        <span>Tuition Fee</span>
+                    </div>
+                    <div class="col col-2">
+
+                        <div class="accordion active">
+                            <h1 class="heading"><i class="fa-solid fa-angle-left icon"></i> Program</h1>
+                            <div class="questions-container">
+
+                                <div class="question question-1">
+                                    <button>
+                                        <p>
+                                            What is AmmarTech Academy ?
+                                        </p>
+                                        <span>
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </span>
+                                    </button>
+                                    <div class="content-wrapper">
+                                        <div class="content">
+                                            <p>
+                                                AmmarTech Academy offers a structured, flexible and guided learning
+                                                program
+                                                for software engineers to accelerate their careers. This program is open
+                                                for all software engineers irrespective of the #number of years of work
+                                                experience or their current place of work.<br>
+                                                Our features include:
+                                            </p>
+                                            <ol class="list">
+                                                <li>
+                                                    Industry-vetted curriculum that covers CS Fundamentals and System
+                                                    Design via a project-based approach. It is reverse-engineered by
+                                                    analysing what it takes to be a great engineer
+                                                </li>
+                                                <li>
+                                                    Live classes thrice a week, the timings for which are pre-defined
+                                                </li>
+                                                <li>
+                                                    Tutors who have built scalable systems in the past and understand
+                                                    the real-life importance of DSA and System Design, not just
+                                                    interview-relevant material
+                                                </li>
+                                                <li>
+                                                    Quick & hassle-free doubt resolution from our 100+ Teaching
+                                                    Assistants
+                                                </li>
+                                                <li>
+                                                    Aspirational peer group and access to AmmarTechChat, our internal
+                                                    communication tool wherein you can collaborate with others on
+                                                    projects, get authentic interview experiences and share job
+                                                    referrals
+                                                </li>
+                                                <li>
+                                                    Flexible program that helps you continue learning despite your super
+                                                    hectic schedule.
+                                                </li>
+                                                <li>
+                                                    Recorded lectures to view later and also allow you to move between
+                                                    batches at NO cost
+                                                </li>
+                                                <li>
+                                                    Career support - we provide job opportunities via our 100+ employer
+                                                    partners, mock interview, and career planning services
+                                                </li>
+                                            </ol>
+                                            <p>
+                                                Please visit <a href="www.AmmarTech.com">www.AmmarTech.com</a> for
+                                                more information.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="question question-2">
+                                    <button>
+                                        <p>
+                                            Who is eligible for AmmarTech Academy?
+                                        </p>
+                                        <span>
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </span>
+                                    </button>
+                                    <div class="content-wrapper">
+                                        <div class="content">
+                                            Software engineers with any number of years of experience can choose to join
+                                            Scaler Academy. Applicants currently in college (1st, 2nd, 3rd or final year
+                                            of
+                                            college) could consider to join Scaler Edge, our college student focused
+                                            product. Please visit www.scaler.com/edge for more detail
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="question question-3">
+                                    <button>
+                                        <p>When are the live classes held?</p>
+                                        <span>
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </span>
+                                    </button>
+                                    <div class="content-wrapper">
+                                        <div class="content">
+                                            Live classes are normally held 2 times a week, with the exact class days and
+                                            timings being determined by the batch. However, given all learners would be
+                                            software engineers that are currently working, the classes would be held in
+                                            the
+                                            late evening or night on weekdays and any suitable time over the weekends.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="question question-4">
+                                    <button>
+                                        <p>
+                                            What if I miss a lecture?
+                                        </p>
+                                        <span>
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </span>
+                                    </button>
+                                    <div class="content-wrapper">
+                                        <div class="content">
+                                            All lectures are recorded and you will have access to the recordings after
+                                            the
+                                            lecture is completed.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="question question-5">
+                                    <button>
+                                        <p>
+                                            Can I attend part-time?
+                                        </p>
+                                        <span>
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </span>
+                                    </button>
+                                    <div class="content-wrapper">
+                                        <div class="content">
+                                            The program has a fixed schedule, during which you would attend
+                                            live-lectures with a dedicated instructor, Teaching Assistant, and personal
+                                            mentor. 15 hour weekly commitment is required for the duration of the
+                                            program in order to achieve positive results.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="question question-6">
+                                    <button>
+                                        <p>
+                                            Is there a certificate provided at the end of the program?
+                                        </p>
+                                        <span>
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </span>
+                                    </button>
+                                    <div class="content-wrapper">
+                                        <div class="content">
+                                            Yes,you will receive a certificate of Scaler Academy's program completion.
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="accordion">
+                            <h1 class="heading"> <i class="fa-solid fa-angle-left icon"></i>  Curriculum</h1>
+                            <div class="questions-container">
+
+                                <div class="question question-1">
+                                    <button>
+                                        <p>
+                                            What is AmmarTech Academy ?
+                                        </p>
+                                        <span>
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </span>
+                                    </button>
+                                    <div class="content-wrapper">
+                                        <div class="content">
+                                            <p>
+                                                AmmarTech Academy offers a structured, flexible and guided learning
+                                                program
+                                                for software engineers to accelerate their careers. This program is open
+                                                for all software engineers irrespective of the #number of years of work
+                                                experience or their current place of work.<br>
+                                                Our features include:
+                                            </p>
+                                            <ol class="list">
+                                                <li>
+                                                    Industry-vetted curriculum that covers CS Fundamentals and System
+                                                    Design via a project-based approach. It is reverse-engineered by
+                                                    analysing what it takes to be a great engineer
+                                                </li>
+                                                <li>
+                                                    Live classes thrice a week, the timings for which are pre-defined
+                                                </li>
+                                                <li>
+                                                    Tutors who have built scalable systems in the past and understand
+                                                    the real-life importance of DSA and System Design, not just
+                                                    interview-relevant material
+                                                </li>
+                                                <li>
+                                                    Quick & hassle-free doubt resolution from our 100+ Teaching
+                                                    Assistants
+                                                </li>
+                                                <li>
+                                                    Aspirational peer group and access to AmmarTechChat, our internal
+                                                    communication tool wherein you can collaborate with others on
+                                                    projects, get authentic interview experiences and share job
+                                                    referrals
+                                                </li>
+                                                <li>
+                                                    Flexible program that helps you continue learning despite your super
+                                                    hectic schedule.
+                                                </li>
+                                                <li>
+                                                    Recorded lectures to view later and also allow you to move between
+                                                    batches at NO cost
+                                                </li>
+                                                <li>
+                                                    Career support - we provide job opportunities via our 100+ employer
+                                                    partners, mock interview, and career planning services
+                                                </li>
+                                            </ol>
+                                            <p>
+                                                Please visit <a href="www.AmmarTech.com">www.AmmarTech.com</a> for
+                                                more information.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="question question-2">
+                                    <button>
+                                        <p>
+                                            Who is eligible for AmmarTech Academy?
+                                        </p>
+                                        <span>
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </span>
+                                    </button>
+                                    <div class="content-wrapper">
+                                        <div class="content">
+                                            Software engineers with any number of years of experience can choose to join
+                                            Scaler Academy. Applicants currently in college (1st, 2nd, 3rd or final year
+                                            of
+                                            college) could consider to join Scaler Edge, our college student focused
+                                            product. Please visit www.scaler.com/edge for more detail
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="question question-3">
+                                    <button>
+                                        <p>When are the live classes held?</p>
+                                        <span>
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </span>
+                                    </button>
+                                    <div class="content-wrapper">
+                                        <div class="content">
+                                            Live classes are normally held 2 times a week, with the exact class days and
+                                            timings being determined by the batch. However, given all learners would be
+                                            software engineers that are currently working, the classes would be held in
+                                            the
+                                            late evening or night on weekdays and any suitable time over the weekends.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="question question-4">
+                                    <button>
+                                        <p>
+                                            What if I miss a lecture?
+                                        </p>
+                                        <span>
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </span>
+                                    </button>
+                                    <div class="content-wrapper">
+                                        <div class="content">
+                                            All lectures are recorded and you will have access to the recordings after
+                                            the
+                                            lecture is completed.
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="accordion">
+                            <h1 class="heading"> <i class="fa-solid fa-angle-left icon"></i>  Teaching</h1>
+                            <div class="questions-container">
+
+                                <div class="question question-1">
+                                    <button>
+                                        <p>
+                                            What is AmmarTech Academy ?
+                                        </p>
+                                        <span>
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </span>
+                                    </button>
+                                    <div class="content-wrapper">
+                                        <div class="content">
+                                            <p>
+                                                AmmarTech Academy offers a structured, flexible and guided learning
+                                                program
+                                                for software engineers to accelerate their careers. This program is open
+                                                for all software engineers irrespective of the #number of years of work
+                                                experience or their current place of work.<br>
+                                                Our features include:
+                                            </p>
+                                            <ol class="list">
+                                                <li>
+                                                    Industry-vetted curriculum that covers CS Fundamentals and System
+                                                    Design via a project-based approach. It is reverse-engineered by
+                                                    analysing what it takes to be a great engineer
+                                                </li>
+                                                <li>
+                                                    Live classes thrice a week, the timings for which are pre-defined
+                                                </li>
+                                                <li>
+                                                    Tutors who have built scalable systems in the past and understand
+                                                    the real-life importance of DSA and System Design, not just
+                                                    interview-relevant material
+                                                </li>
+                                                <li>
+                                                    Quick & hassle-free doubt resolution from our 100+ Teaching
+                                                    Assistants
+                                                </li>
+                                                <li>
+                                                    Aspirational peer group and access to AmmarTechChat, our internal
+                                                    communication tool wherein you can collaborate with others on
+                                                    projects, get authentic interview experiences and share job
+                                                    referrals
+                                                </li>
+                                                <li>
+                                                    Flexible program that helps you continue learning despite your super
+                                                    hectic schedule.
+                                                </li>
+                                                <li>
+                                                    Recorded lectures to view later and also allow you to move between
+                                                    batches at NO cost
+                                                </li>
+                                                <li>
+                                                    Career support - we provide job opportunities via our 100+ employer
+                                                    partners, mock interview, and career planning services
+                                                </li>
+                                            </ol>
+                                            <p>
+                                                Please visit <a href="www.AmmarTech.com">www.AmmarTech.com</a> for
+                                                more information.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="question question-2">
+                                    <button>
+                                        <p>
+                                            Who is eligible for AmmarTech Academy?
+                                        </p>
+                                        <span>
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </span>
+                                    </button>
+                                    <div class="content-wrapper">
+                                        <div class="content">
+                                            Software engineers with any number of years of experience can choose to join
+                                            Scaler Academy. Applicants currently in college (1st, 2nd, 3rd or final year
+                                            of
+                                            college) could consider to join Scaler Edge, our college student focused
+                                            product. Please visit www.scaler.com/edge for more detail
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="question question-3">
+                                    <button>
+                                        <p>When are the live classes held?</p>
+                                        <span>
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </span>
+                                    </button>
+                                    <div class="content-wrapper">
+                                        <div class="content">
+                                            Live classes are normally held 2 times a week, with the exact class days and
+                                            timings being determined by the batch. However, given all learners would be
+                                            software engineers that are currently working, the classes would be held in
+                                            the
+                                            late evening or night on weekdays and any suitable time over the weekends.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="question question-4">
+                                    <button>
+                                        <p>
+                                            What if I miss a lecture?
+                                        </p>
+                                        <span>
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </span>
+                                    </button>
+                                    <div class="content-wrapper">
+                                        <div class="content">
+                                            All lectures are recorded and you will have access to the recordings after
+                                            the
+                                            lecture is completed.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion">
+                            <h1 class="heading"> <i class="fa-solid fa-angle-left icon"></i>  Teaching Assistants</h1>
+                            <div class="questions-container">
+                                <div class="question question-1">
+                                    <button>
+                                        <p>
+                                            What are the Beginner, Intermediate and Advanced sections?
+                                        </p>
+                                        <span>
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </span>
+                                    </button>
+
+                                    <div class="content-wrapper">
+                                        <div class="content">
+                                            <p>
+                                                AmmarTech Academy offers a structured, flexible and guided learning
+                                                program
+                                                for software engineers to accelerate their careers. This program is open
+                                                for all software engineers irrespective of the #number of years of work
+                                                experience or their current place of work.
+                                                Our features include:
+                                            </p>
+                                            <ol>
+                                                <li>
+                                                    Industry-vetted curriculum that covers CS Fundamentals and System
+                                                    Design via a project-based approach. It is reverse-engineered by
+                                                    analysing what it takes to be a great engineer
+                                                </li>
+                                                <li>
+                                                    Live classes thrice a week, the timings for which are pre-defined
+                                                </li>
+                                                <li>
+                                                    Tutors who have built scalable systems in the past and understand
+                                                    the real-life importance of DSA and System Design, not just
+                                                    interview-relevant material
+                                                </li>
+                                                <li>
+                                                    Quick & hassle-free doubt resolution from our 100+ Teaching
+                                                    Assistants
+                                                </li>
+                                                <li>
+                                                    Aspirational peer group and access to AmmarTechChat, our internal
+                                                    communication tool wherein you can collaborate with others on
+                                                    projects, get authentic interview experiences and share job
+                                                    referrals
+                                                </li>
+                                                <li>
+                                                    Flexible program that helps you continue learning despite your super
+                                                    hectic schedule.
+                                                </li>
+                                                <li>
+                                                    Recorded lectures to view later and also allow you to move between
+                                                    batches at NO cost
+                                                </li>
+                                                <li>
+                                                    Career support - we provide job opportunities via our 100+ employer
+                                                    partners, mock interview, and career planning services
+                                                </li>
+                                                <p>
+                                                    Please visit <a href="www.AmmarTech.com">www.AmmarTech.com</a> for
+                                                    more information.
+                                                </p>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="question question-2">
+                                    <button>
+                                        <p>
+                                            Who is eligible for AmmarTech Academy?
+                                        </p>
+                                        <span>
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </span>
+                                    </button>
+                                    <div class="content-wrapper">
+                                        <div class="content">
+                                            Software engineers with any number of years of experience can choose to join
+                                            Scaler Academy. Applicants currently in college (1st, 2nd, 3rd or final year
+                                            of
+                                            college) could consider to join Scaler Edge, our college student focused
+                                            product. Please visit www.scaler.com/edge for more detail
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="question question-3">
+                                    <button>
+                                        <p>When are the live classes held?</p>
+                                        <span>
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </span>
+                                    </button>
+                                    <div class="content-wrapper">
+                                        <div class="content">
+                                            Live classes are normally held 2 times a week, with the exact class days and
+                                            timings being determined by the batch. However, given all learners would be
+                                            software engineers that are currently working, the classes would be held in
+                                            the
+                                            late evening or night on weekdays and any suitable time over the weekends.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="question question-4">
+                                    <button>
+                                        <p>
+                                            What if I miss a lecture?
+                                        </p>
+                                        <span>
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </span>
+                                    </button>
+                                    <div class="content-wrapper">
+                                        <div class="content">
+                                            All lectures are recorded and you will have access to the recordings after
+                                            the
+                                            lecture is completed.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion">
+                            <h1 class="heading"> <i class="fa-solid fa-angle-left icon"></i>  Entrance Test</h1>
+                            <div class="questions-container">
+                                <div class="question question-1">
+                                    <button>
+                                        <p>
+                                            What is AmmarTech Academy ?
+                                        </p>
+                                        <span>
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </span>
+                                    </button>
+                                    <div class="content-wrapper">
+                                        <div class="content">
+                                            <p>
+                                                AmmarTech Academy offers a structured, flexible and guided learning
+                                                program
+                                                for software engineers to accelerate their careers. This program is open
+                                                for all software engineers irrespective of the #number of years of work
+                                                experience or their current place of work.<br>
+                                                Our features include:
+                                            </p>
+                                            <ol class="list">
+                                                <li>
+                                                    Industry-vetted curriculum that covers CS Fundamentals and System
+                                                    Design via a project-based approach. It is reverse-engineered by
+                                                    analysing what it takes to be a great engineer
+                                                </li>
+                                                <li>
+                                                    Live classes thrice a week, the timings for which are pre-defined
+                                                </li>
+                                                <li>
+                                                    Tutors who have built scalable systems in the past and understand
+                                                    the real-life importance of DSA and System Design, not just
+                                                    interview-relevant material
+                                                </li>
+                                                <li>
+                                                    Quick & hassle-free doubt resolution from our 100+ Teaching
+                                                    Assistants
+                                                </li>
+                                                <li>
+                                                    Aspirational peer group and access to AmmarTechChat, our internal
+                                                    communication tool wherein you can collaborate with others on
+                                                    projects, get authentic interview experiences and share job
+                                                    referrals
+                                                </li>
+                                                <li>
+                                                    Flexible program that helps you continue learning despite your super
+                                                    hectic schedule.
+                                                </li>
+                                                <li>
+                                                    Recorded lectures to view later and also allow you to move between
+                                                    batches at NO cost
+                                                </li>
+                                                <li>
+                                                    Career support - we provide job opportunities via our 100+ employer
+                                                    partners, mock interview, and career planning services
+                                                </li>
+                                            </ol>
+                                            <p>
+                                                Please visit <a href="www.AmmarTech.com">www.AmmarTech.com</a> for
+                                                more information.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="question question-2">
+                                    <button>
+                                        <p>
+                                            Who is eligible for AmmarTech Academy?
+                                        </p>
+                                        <span>
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </span>
+                                    </button>
+                                    <div class="content-wrapper">
+                                        <div class="content">
+                                            Software engineers with any number of years of experience can choose to join
+                                            Scaler Academy. Applicants currently in college (1st, 2nd, 3rd or final year
+                                            of
+                                            college) could consider to join Scaler Edge, our college student focused
+                                            product. Please visit www.scaler.com/edge for more detail
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="question question-3">
+                                    <button>
+                                        <p>When are the live classes held?</p>
+                                        <span>
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </span>
+                                    </button>
+                                    <div class="content-wrapper">
+                                        <div class="content">
+                                            Live classes are normally held 2 times a week, with the exact class days and
+                                            timings being determined by the batch. However, given all learners would be
+                                            software engineers that are currently working, the classes would be held in
+                                            the
+                                            late evening or night on weekdays and any suitable time over the weekends.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="question question-4">
+                                    <button>
+                                        <p>
+                                            What if I miss a lecture?
+                                        </p>
+                                        <span>
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </span>
+                                    </button>
+                                    <div class="content-wrapper">
+                                        <div class="content">
+                                            All lectures are recorded and you will have access to the recordings after
+                                            the
+                                            lecture is completed.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion">
+                            <h1 class="heading"> <i class="fa-solid fa-angle-left icon"></i>  Mentors</h1>
+                            <div class="questions-container">
+                                <div class="question question-1">
+                                    <button>
+                                        <p>
+                                            What is AmmarTech Academy ?
+                                        </p>
+                                        <span>
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </span>
+                                    </button>
+                                    <div class="content-wrapper">
+                                        <div class="content">
+                                            <p>
+                                                AmmarTech Academy offers a structured, flexible and guided learning
+                                                program
+                                                for software engineers to accelerate their careers. This program is open
+                                                for all software engineers irrespective of the #number of years of work
+                                                experience or their current place of work.<br>
+                                                Our features include:
+                                            </p>
+                                            <ol class="list">
+                                                <li>
+                                                    Industry-vetted curriculum that covers CS Fundamentals and System
+                                                    Design via a project-based approach. It is reverse-engineered by
+                                                    analysing what it takes to be a great engineer
+                                                </li>
+                                                <li>
+                                                    Live classes thrice a week, the timings for which are pre-defined
+                                                </li>
+                                                <li>
+                                                    Tutors who have built scalable systems in the past and understand
+                                                    the real-life importance of DSA and System Design, not just
+                                                    interview-relevant material
+                                                </li>
+                                                <li>
+                                                    Quick & hassle-free doubt resolution from our 100+ Teaching
+                                                    Assistants
+                                                </li>
+                                                <li>
+                                                    Aspirational peer group and access to AmmarTechChat, our internal
+                                                    communication tool wherein you can collaborate with others on
+                                                    projects, get authentic interview experiences and share job
+                                                    referrals
+                                                </li>
+                                                <li>
+                                                    Flexible program that helps you continue learning despite your super
+                                                    hectic schedule.
+                                                </li>
+                                                <li>
+                                                    Recorded lectures to view later and also allow you to move between
+                                                    batches at NO cost
+                                                </li>
+                                                <li>
+                                                    Career support - we provide job opportunities via our 100+ employer
+                                                    partners, mock interview, and career planning services
+                                                </li>
+                                            </ol>
+                                            <p>
+                                                Please visit <a href="www.AmmarTech.com">www.AmmarTech.com</a> for
+                                                more information.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="question question-2">
+                                    <button>
+                                        <p>
+                                            Who is eligible for AmmarTech Academy?
+                                        </p>
+                                        <span>
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </span>
+                                    </button>
+                                    <div class="content-wrapper">
+                                        <div class="content">
+                                            Software engineers with any number of years of experience can choose to join
+                                            Scaler Academy. Applicants currently in college (1st, 2nd, 3rd or final year
+                                            of
+                                            college) could consider to join Scaler Edge, our college student focused
+                                            product. Please visit www.scaler.com/edge for more detail
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="question question-3">
+                                    <button>
+                                        <p>When are the live classes held?</p>
+                                        <span>
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </span>
+                                    </button>
+                                    <div class="content-wrapper">
+                                        <div class="content">
+                                            Live classes are normally held 2 times a week, with the exact class days and
+                                            timings being determined by the batch. However, given all learners would be
+                                            software engineers that are currently working, the classes would be held in
+                                            the
+                                            late evening or night on weekdays and any suitable time over the weekends.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="question question-4">
+                                    <button>
+                                        <p>
+                                            What if I miss a lecture?
+                                        </p>
+                                        <span>
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </span>
+                                    </button>
+                                    <div class="content-wrapper">
+                                        <div class="content">
+                                            All lectures are recorded and you will have access to the recordings after
+                                            the
+                                            lecture is completed.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion">
+                            <h1 class="heading"> <i class="fa-solid fa-angle-left icon"></i>  Placement Support</h1>
+                            <div class="questions-container">
+                                <div class="question question-1">
+                                    <button>
+                                        <p>
+                                            What is AmmarTech Academy ?
+                                        </p>
+                                        <span>
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </span>
+                                    </button>
+                                    <div class="content-wrapper">
+                                        <div class="content">
+                                            <p>
+                                                AmmarTech Academy offers a structured, flexible and guided learning
+                                                program
+                                                for software engineers to accelerate their careers. This program is open
+                                                for all software engineers irrespective of the #number of years of work
+                                                experience or their current place of work.<br>
+                                                Our features include:
+                                            </p>
+                                            <ol class="list">
+                                                <li>
+                                                    Industry-vetted curriculum that covers CS Fundamentals and System
+                                                    Design via a project-based approach. It is reverse-engineered by
+                                                    analysing what it takes to be a great engineer
+                                                </li>
+                                                <li>
+                                                    Live classes thrice a week, the timings for which are pre-defined
+                                                </li>
+                                                <li>
+                                                    Tutors who have built scalable systems in the past and understand
+                                                    the real-life importance of DSA and System Design, not just
+                                                    interview-relevant material
+                                                </li>
+                                                <li>
+                                                    Quick & hassle-free doubt resolution from our 100+ Teaching
+                                                    Assistants
+                                                </li>
+                                                <li>
+                                                    Aspirational peer group and access to AmmarTechChat, our internal
+                                                    communication tool wherein you can collaborate with others on
+                                                    projects, get authentic interview experiences and share job
+                                                    referrals
+                                                </li>
+                                                <li>
+                                                    Flexible program that helps you continue learning despite your super
+                                                    hectic schedule.
+                                                </li>
+                                                <li>
+                                                    Recorded lectures to view later and also allow you to move between
+                                                    batches at NO cost
+                                                </li>
+                                                <li>
+                                                    Career support - we provide job opportunities via our 100+ employer
+                                                    partners, mock interview, and career planning services
+                                                </li>
+                                            </ol>
+                                            <p>
+                                                Please visit <a href="www.AmmarTech.com">www.AmmarTech.com</a> for
+                                                more information.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="question question-2">
+                                    <button>
+                                        <p>
+                                            Who is eligible for AmmarTech Academy?
+                                        </p>
+                                        <span>
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </span>
+                                    </button>
+                                    <div class="content-wrapper">
+                                        <div class="content">
+                                            Software engineers with any number of years of experience can choose to join
+                                            Scaler Academy. Applicants currently in college (1st, 2nd, 3rd or final year
+                                            of
+                                            college) could consider to join Scaler Edge, our college student focused
+                                            product. Please visit www.scaler.com/edge for more detail
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="question question-3">
+                                    <button>
+                                        <p>When are the live classes held?</p>
+                                        <span>
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </span>
+                                    </button>
+                                    <div class="content-wrapper">
+                                        <div class="content">
+                                            Live classes are normally held 2 times a week, with the exact class days and
+                                            timings being determined by the batch. However, given all learners would be
+                                            software engineers that are currently working, the classes would be held in
+                                            the
+                                            late evening or night on weekdays and any suitable time over the weekends.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="question question-4">
+                                    <button>
+                                        <p>
+                                            What if I miss a lecture?
+                                        </p>
+                                        <span>
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </span>
+                                    </button>
+                                    <div class="content-wrapper">
+                                        <div class="content">
+                                            All lectures are recorded and you will have access to the recordings after
+                                            the
+                                            lecture is completed.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion">
+                            <h1 class="heading"> <i class="fa-solid fa-angle-left icon"></i>  Tution Fee</h1>
+                            <div class="questions-container">
+                                <div class="question question-1">
+                                    <button>
+                                        <p>
+                                            What is AmmarTech Academy ?
+                                        </p>
+                                        <span>
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </span>
+                                    </button>
+                                    <div class="content-wrapper">
+                                        <div class="content">
+                                            <p>
+                                                AmmarTech Academy offers a structured, flexible and guided learning
+                                                program
+                                                for software engineers to accelerate their careers. This program is open
+                                                for all software engineers irrespective of the #number of years of work
+                                                experience or their current place of work.<br>
+                                                Our features include:
+                                            </p>
+                                            <ol class="list">
+                                                <li>
+                                                    Industry-vetted curriculum that covers CS Fundamentals and System
+                                                    Design via a project-based approach. It is reverse-engineered by
+                                                    analysing what it takes to be a great engineer
+                                                </li>
+                                                <li>
+                                                    Live classes thrice a week, the timings for which are pre-defined
+                                                </li>
+                                                <li>
+                                                    Tutors who have built scalable systems in the past and understand
+                                                    the real-life importance of DSA and System Design, not just
+                                                    interview-relevant material
+                                                </li>
+                                                <li>
+                                                    Quick & hassle-free doubt resolution from our 100+ Teaching
+                                                    Assistants
+                                                </li>
+                                                <li>
+                                                    Aspirational peer group and access to AmmarTechChat, our internal
+                                                    communication tool wherein you can collaborate with others on
+                                                    projects, get authentic interview experiences and share job
+                                                    referrals
+                                                </li>
+                                                <li>
+                                                    Flexible program that helps you continue learning despite your super
+                                                    hectic schedule.
+                                                </li>
+                                                <li>
+                                                    Recorded lectures to view later and also allow you to move between
+                                                    batches at NO cost
+                                                </li>
+                                                <li>
+                                                    Career support - we provide job opportunities via our 100+ employer
+                                                    partners, mock interview, and career planning services
+                                                </li>
+                                            </ol>
+                                            <p>
+                                                Please visit <a href="www.AmmarTech.com">www.AmmarTech.com</a> for
+                                                more information.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="question question-2">
+                                    <button>
+                                        <p>
+                                            Who is eligible for AmmarTech Academy?
+                                        </p>
+                                        <span>
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </span>
+                                    </button>
+                                    <div class="content-wrapper">
+                                        <div class="content">
+                                            Software engineers with any number of years of experience can choose to join
+                                            Scaler Academy. Applicants currently in college (1st, 2nd, 3rd or final year
+                                            of
+                                            college) could consider to join Scaler Edge, our college student focused
+                                            product. Please visit www.scaler.com/edge for more detail
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="question question-3">
+                                    <button>
+                                        <p>When are the live classes held?</p>
+                                        <span>
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </span>
+                                    </button>
+                                    <div class="content-wrapper">
+                                        <div class="content">
+                                            Live classes are normally held 2 times a week, with the exact class days and
+                                            timings being determined by the batch. However, given all learners would be
+                                            software engineers that are currently working, the classes would be held in
+                                            the
+                                            late evening or night on weekdays and any suitable time over the weekends.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="question question-4">
+                                    <button>
+                                        <p>
+                                            What if I miss a lecture?
+                                        </p>
+                                        <span>
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </span>
+                                    </button>
+                                    <div class="content-wrapper">
+                                        <div class="content">
+                                            All lectures are recorded and you will have access to the recordings after
+                                            the
+                                            lecture is completed.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer section starts here  -->
+    <footer>
+        <div class="main-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="logo">
+                            <a href="" class="logo-link">
+                                <img src="images/logo.png" alt="">
+                            </a>
+                            <p>
+                                Engineered with by
+                            </p>
+                            <img src="images/logo.png" alt="" class="logo-img">
+                        </div>
+                        <div class="app">
+                            <div class="left">
+                                <p>Downlod the App</p>
+                                <a href="">
+                                    <img src="images/google-play.png" alt="">
+                                </a>
+                            </div>
+                            <div class="right">
+                                <a href="">
+                                    <img src="images/qrcode.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <h1 class="heading">
+                            Explore AmmarTech
+                        </h1>
+                        <div class="links">
+                            <a href="index.html">AmmarTech Academy</a>
+                            <a href="">AmmarTech Data Science & ML</a>
+                            <a href="">AmmarTech School of Technology</a>
+                            <a href="">AmmarTech Neovarsity</a>
+                            <a href="">AmmarTech Edge</a>
+                            <a href="">Become a Mentor</a>
+                            <a href="">Become a TA</a>
+                            <a href="">Become a Career Coach</a>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <h1 class="heading">
+                            Resources
+                        </h1>
+                        <div class="links">
+                            <a href="">Blog</a>
+                            <a href="">About us</a>
+                            <a href="">Contact us</a>
+                            <a href="">Careers</a>
+                            <a href="">Review</a>
+                            <a href="">Terms of Use</a>
+                            <a href="">Privacy Policy</a>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <h1 class="heading">
+                            Follow us on
+                        </h1>
+                        <div class="links">
+                            <a href="">
+                                <i class="fa-brands fa-youtube"></i> Youtube
+                            </a>
+                            <a href="">
+                                <i class="fa-brands fa-linkedin"></i> LinkedIn
+                            </a>
+                            <a href="">
+                                <i class="fa-brands fa-square-facebook"></i> Facebook
+                            </a>
+                            <a href="">
+                                <i class="fa-brands fa-twitter"></i> Twitter
+                            </a>
+                            <a href="">
+                                <i class="fa-brands fa-instagram"></i> Instagram
+                            </a>
+                            <a href="">
+                                <i class="fa-brands fa-quora"></i> Reviews on Quora
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="divide"></div>
+                <div class="courses">
+                    <h1 class="heading">
+                        Tutorials
+                    </h1>
+                    <div class="links">
+                        <a href="">Data Structures Tutorial</a> |
+                        <a href="">Python Tutorial</a> |
+                        <a href="">Java Tutorial</a> |
+                        <a href="">DBMS Tutorial</a> |
+                        <a href="">C Tutorial</a> |
+                        <a href="">JavaScript Tutorial</a> |
+                        <a href="">C++ Tutorial</a> |
+                        <a href="">SQL Tutorial</a> |
+                        <a href="">Data Science Tutorial</a> |
+                        <a href="">Software Engineering Tutorial</a> |
+                        <a href="">HTML Tutorial</a> |
+                        <a href="">CSS Tutorial</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            Copyright <span class="copy">&copy;</span> 2023 InterviewBit Technologies Pte. Ltd All Rights Reserved.
+        </div>
+    </footer>
+    <!-- all js files  -->
+    <!-- navbar js file link  -->
+    <script src="script/script.js"></script>
+    <!-- signup login js file link  -->
+    <script src="script/signup-login.js"></script>
+    <!-- own js file  link  -->
+    <script src="script/faqs.js"></script>
+</body>
+
+</html>

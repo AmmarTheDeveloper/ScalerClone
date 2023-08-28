@@ -1,0 +1,278 @@
+.login-signup-container{
+    position:fixed;
+    top:0;
+    right:-100%;
+    height:100%;
+    width:100%;
+    background:rgba(0,0,0,0.5);
+    z-index:999;
+    transition:right 0.01s ease;
+    transition-delay:0.1s;
+}
+.login-signup-container .container h1.heading{
+    font-size:2.5rem;
+    text-align:left;
+    margin-bottom:1rem;
+}
+.login-signup-container.active{
+    right:0;
+    transition-delay:0;
+}
+
+.login-signup-container .container{
+    width:100%;
+    max-width:600px;
+    height:100%;
+    background:var(--white);
+    display:flex;
+    flex-direction:column;
+    justify-content:stretch;
+    align-items:start;
+    overflow:auto;
+    position:absolute;
+    right:-100%;
+    bottom:0;
+    transition:all 0.3s ease;
+}
+.login-signup-container .container.active{
+    right:0;
+}
+.login-signup-container .container .close{
+    padding:20px 30px;
+    text-align:right;
+    font-size:2.4rem;
+    cursor:pointer;
+    height:fit-content;
+    width:100%;
+}
+.login-signup-container :where(.signup form , .login .form-container){
+    width:100%;
+    padding:20px 30px;
+}
+.login-signup-container .container .form-container h1.heading{
+    font-size:2.5rem;
+    text-align:left;
+    margin-bottom:30px;
+}
+.login-signup-container .container form label{
+    display:block;
+    font-weight:600;
+    font-size:1.6rem;
+    margin-bottom:10px;
+}
+.login-signup-container .container form label .star{
+    color:var(--red);
+    margin-left:2px;
+}
+.login-signup-container .container form p.light{
+    color:#a8a8a8;
+    font-size:1.4rem;
+    margin-bottom:10px;
+    text-align:left;
+    font-weight:500;
+}
+.login-signup-container .container form :where(.input , .input input){
+    width:100%;
+}
+.login-signup-container .container form .two-input{
+    display:flex;
+    column-gap:10px;
+    align-items:start;
+}
+.login-signup-container .login .phone-container .two-input{
+    flex-wrap:wrap;
+    row-gap:5px;
+}
+.login-signup-container .login .phone-container .two-input .error{
+    display:inline-block;
+    width:calc(100% - 70px);
+    margin-left:auto;
+}
+.login-signup-container .container form :where(.input , .two-input){
+    margin-bottom:15px;
+}
+.login-signup-container .container form .two-input .signup-phone{
+    width:60px;
+}
+.login-signup-container .container form .two-input #phone-field{
+    width:100%;
+    max-width:calc(100% - 70px);
+}
+.login-signup-container .container form input{
+    font-size:1.6rem;
+    border-radius:3px;
+    padding:1rem;
+    outline-color:var(--mainBlue);
+}
+.login-signup-container .container form input:not(input[type=submit]){
+    border:2px solid #e2e2e2;
+}
+.login-signup-container .container form input::placeholder{
+    color:rgba(0,0,0,0.4);
+}
+.login-signup-container .container form .submit input{
+    width:100%;
+}
+.login-signup-container .container form .submit{
+    margin-bottom:15px;
+}
+.login-signup-container .container form .account .small{
+    font-size:1.3rem;
+    font-weight:500;
+    color:#a8a8a8;
+    margin-bottom:15px;
+}
+.login-signup-container .container form .account a{
+    color:#0051FD;
+}
+.login-signup-container .container form .account .big{
+    text-align:center;
+    font-size:1.6rem;
+    font-weight:500;
+    color:#5B6F81;
+}
+.login-signup-container .container form  .account .big button{
+    border:none;
+    background:transparent;
+    cursor:pointer;
+    color:#0051FD;
+    font-weight:700;
+    font-size:1.7rem;
+}
+.login-signup-container .container .or{
+    margin-top:20px;
+    text-align:center;
+    height:0.2rem;
+    width:100%;
+    background:#e2e2e2;
+    position:relative;
+}
+.login-signup-container .container .or:after{
+    content:'OR';
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50% , -50%);
+    font-size:1.6rem;
+    text-align:center;
+    color:#5b6f81;
+    background:white;
+    padding-inline:10px;
+}
+.login-signup-container .container  .social-media{
+    margin-top:20px;
+}
+.login-signup-container .container .social-media p{
+    text-align:center;
+    font-size:1.6rem;
+    color:#5B6F81;
+    margin-bottom:10px;
+}
+.login-signup-container .container .social-media .icons{
+    margin-top:20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-signup-container .container .social-media .icons img{
+   max-width:100%;
+}
+.login-signup-container .container .social-media .icons a.icon{
+    flex:1 0 0;
+    max-width:5rem;
+    min-width:25px;
+    margin-inline:20px;
+}
+.login-signup-container .login h1.heading{
+    font-size:3.2rem !important;
+    font-weight:700;
+    margin-bottom:10px !important;
+}
+.login-signup-container .login .subtitle{
+    font-size:1.6rem;
+    color:#5B6F81;
+    margin-bottom:15px;
+}
+.login-signup-container .login .subtitle button{
+    border:none;
+    background:transparent;
+    cursor:pointer;
+    color:#0051FD;
+    font-weight:700;
+    font-size:1.6rem;
+}
+.login-signup-container .login .forget a{
+    font-size:1.6rem;
+    color:#0051FD;
+    font-weight:500;
+}
+.login-signup-container .login :where(.email-container , .phone-container){
+    display:none;
+}
+.login-signup-container .login :where(.email-container.active , .phone-container.active){
+    display:block;
+}
+.login-signup-container .login .btns{
+    margin-top:10px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.login-signup-container .login .btns .email-btn , .login-signup-container .login .btns .phone-btn{
+    border:none;
+    background:transparent;
+    color:#0051FD;
+    font-weight:700;
+    font-size:1.6rem;
+    border-bottom:1px dashed #0051FD;
+    padding-bottom:2px;
+    cursor:pointer;
+}
+.login-signup-container .login .social-media p{
+    text-align:left !important;
+}
+.login-signup-container .login .social-media .icons{
+    justify-content:start !important;
+}
+.login-signup-container .container .error{
+    font-size:14px;
+    color:crimson;
+    display:inline-block;
+    margin-bottom:5px;
+}
+.login-signup-container .container .two-input{
+    align-items:start;
+}
+.login-signup-container .container .mobile-container{
+    width:100%;
+}
+.login-signup-container .container .mobile-container input{
+    width:100%;
+    display:block;
+    margin:0;
+}
+@media screen and (max-width:1023px){
+    .login-signup-container .container form .account .small{
+        font-size:12px;
+    }
+   
+}
+@media screen  and (max-width:768px){
+
+    .login-signup-container .container{
+        max-width:100%;
+        width:100%;
+        height:80vh;
+        bottom:-100%;
+        left:0;
+        transition:bottom 0.3s ease;
+    }
+    .login-signup-container .container.active{
+        bottom:0;
+    }
+}
+@media screen and (max-width:400px){
+    .login-signup-container .container .social-media .icons a.icon{
+        margin-inline:10px;
+    }
+}

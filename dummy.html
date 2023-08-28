@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions | AmmarTech</title>
+     <!-- html title icon (favicon) link  -->
+     <link rel="icon" type="image/x-icon" href="images/logo2.png">
+      <!-- fontawesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- navbar css file link  -->
+    <link rel="stylesheet" href="css/navbar.css" />
+     <!-- css login signup css file link  -->
+     <link rel="stylesheet" href="css/login-signup.css">
+     <!-- footer css file link  -->
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <div class="navbar-alt"></div>
+    <div class="navbar">
+            <div class="main-container">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="">
+                </a>
+                <div class="nav-container">
+                    <nav>
+                        <a href="" class="mentor-link">Be a mentor</a> 
+                    </nav>
+                    <div class="nav-btns">
+    
+                        <div class="google-play">
+                            <div class="google-play-icon">
+                                <img class="playstore-icon" src="images/google-play-icon.png" alt="">
+                                <div class="google-play-link">
+                                    <div class="content">
+                                        <p>Learn Coding on AmmarTech App</p>
+                                        <a href="">
+                                            <img src="images/google-play.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="qr-code">
+                                        <img src="images/qrcode.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <button class="btn apply-btn signup-btn" type="button">APPLY NOW</button>
+                        <button class="btn login-btn" type="button">Login</button>
+                        <a href="tel:+919892564710" class="call">
+                            <span class="icon-container">
+                                <i class="fa-solid fa-phone"></i>
+                            </span>
+                            <span class="call-details">
+                                <p>Talk To Our Experts</p>
+                                <p class="nubmer">+919892564710</p>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-menu-btn">
+                    <a href="">
+                        <img src="images/google-play.png" alt="">
+                    </a>
+                    <div class="lines">
+                        <div class="line line-1"></div>
+                        <div class="line line-2"></div>
+                        <div class="line line-3"></div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="login-signup-container">
+        <div class="container signup">
+            <div class="close">
+                <i class="fa-sharp fa-solid fa-xmark"></i>
+            </div>
+            <form action="">
+                <h1 class="heading">
+                    Ready to become a <b>Rockstar Developer?</b>
+                </h1>
+                <div class="inputs">
+                    <div class="name input">
+                        <label for="name">Full Name<span class="star">*</span></label>
+                        <input type="text" placeholder="Enter your name" id="name" required>
+                    </div>
+                    <div class="email input">
+                        <label for="email-input">Email<span class="star">*</span></label>
+                        <input type="email" placeholder="Enter your email" id="email-input" required>
+                        <span class="error"></span>
+                    </div>
+                    <div class="phone">
+                        <label for="phone-input">Phone Number<span class="star">*</span></label>
+                        <p class="light">OTP will be sent to this number for verification</p>
+                        <div class="two-input">
+                            <input type="text" class="signup-phone" value="+91" disabled>
+                            <div class="mobile-container">
+                                <input type="number" placeholder="Enter your mobile number" required id="phone-input">
+                                <span class="error"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="graduation input">
+                        <label for="graduation">Graduation Year<span class="star">*</span></label>
+                        <input type="number" required class="graudation-field" placeholder="Year of Graduation"
+                            id="graduation">
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="SIGN UP" class="btn btn-crimson">
+                    </div>
+                </div>
+                <div class="account">
+                    <p class="small">
+                        By creating an account I have read and agree to AmmarTech's <a href="">Terms</a> and <a
+                            href="">Privacy Policy</a>
+                    </p>
+                    <p class="big">
+                        Already a member? <button type="button" class="login-btn">LOG IN</button>
+                    </p>
+                </div>
+                <div class="or">
+                </div>
+                <div class="social-media">
+                    <p>Log in using</p>
+                    <div class="icons">
+                        <a href="" class="icon facebook">
+                            <img src="images/facebook.png" alt="">
+                        </a>
+                        <a href="" class="icon linked-in">
+                            <img src="images/linked-in-icon.png" alt="">
+                        </a>
+                        <a href="" class="icon github">
+                            <img src="images/github.png" alt="">
+                        </a>
+                        <a href="" class="icon google">
+                            <img src="images/google-icon.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="container login">
+            <div class="close">
+                <i class="fa-sharp fa-solid fa-xmark"></i>
+            </div>
+            <div class="form-container">
+                <h1 class="heading">Login</h1>
+                <p class="subtitle">or <button type="button" class="signup-btn">create your AmmarTech account</button>
+                </p>
+
+                <form action="" class="phone-container active" id="mobile">
+                    <label for="phone-field">Mobile Number<span class="star">*</span></label>
+                    <div class="two-input">
+                        <input type="text" class="signup-phone" value="+91" disabled>
+                        <input type="number" required placeholder="Enter your mobile number" id="phone-field">
+                        <span class="error"></span>
+                    </div>
+                    <div class="btns">
+                        <input type="submit" class="btn btn-crimson" value="Login" />
+                        <button type="button" class="email-btn">continue using email</button>
+                    </div>
+                </form>
+
+                <form class="email-container">
+                    <div class="email input">
+                        <label for="email">Email<span class="star">*</span></label>
+                        <input type="email" required placeholder="Enter your email" id="email">
+                    </div>
+                    <div class="password input">
+                        <label for="password">Password<span class="star">*</span></label>
+                        <input type="password" required placeholder="Enter your password" id="password">
+                        <span class="error"></span>
+                    </div>
+                    <div class="forget">
+                        <a href="">Forget Password?</a>
+                    </div>
+                    <div class="btns">
+                        <input type="submit" class="btn btn-crimson" value="Login" />
+                        <button type="button" class="phone-btn">continue using mobile</button>
+                    </div>
+                </form>
+
+                <div class="or">
+                </div>
+                <div class="social-media">
+                    <p>Log in using</p>
+                    <div class="icons">
+                        <a href="" class="icon facebook">
+                            <img src="images/facebook.png" alt="">
+                        </a>
+                        <a href="" class="icon linked-in">
+                            <img src="images/linked-in-icon.png" alt="">
+                        </a>
+                        <a href="" class="icon github">
+                            <img src="images/github.png" alt="">
+                        </a>
+                        <a href="" class="icon google">
+                            <img src="images/google-icon.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      <!-- footer section starts here  -->
+      <footer>
+        <div class="main-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="logo">
+                            <a href="" class="logo-link">
+                                <img src="images/logo.png" alt="">
+                            </a>
+                            <p>
+                                Engineered with by
+                            </p>
+                            <img src="images/logo.png" alt="" class="logo-img">
+                        </div>
+                        <div class="app">
+                            <div class="left">
+                                <p>Downlod the App</p>
+                                <a href="">
+                                    <img src="images/google-play.png" alt="">
+                                </a>
+                            </div>
+                            <div class="right">
+                                <a href="">
+                                    <img src="images/qrcode.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col">
+                        <h1 class="heading">
+                            Explore Scaler
+                        </h1>
+                        <div class="links">
+                            <a href="">AmmarTech Academy</a>
+                            <a href="">AmmarTech Data Science & ML</a>
+                            <a href="">AmmarTech School of Technology</a>
+                            <a href="">AmmarTech Neovarsity</a>
+                            <a href="">AmmarTech Edge</a>
+                            <a href="">Become a Mentor</a>
+                            <a href="">Become a TA</a>
+                            <a href="">Become a Career Coach</a>
+                        </div>
+                    </div>
+    
+                    <div class="col">
+                        <h1 class="heading">
+                            Resources
+                        </h1>
+                        <div class="links">
+                           <a href="">Blog</a>
+                           <a href="">About us</a>
+                           <a href="">Contact us</a>
+                           <a href="">Careers</a>
+                           <a href="">Review</a>
+                           <a href="">Terms of Use</a>
+                           <a href="">Privacy Policy</a>
+                        </div>
+                    </div>
+    
+                    <div class="col">
+                        <h1 class="heading">
+                            Follow us on
+                        </h1>
+                        <div class="links">
+                            <a href="">
+                                <i class="fa-brands fa-youtube"></i> Youtube
+                            </a>
+                            <a href="">
+                                <i class="fa-brands fa-linkedin"></i> LinkedIn
+                            </a>
+                            <a href="">
+                                <i class="fa-brands fa-square-facebook"></i> Facebook
+                            </a>
+                            <a href="">
+                                <i class="fa-brands fa-twitter"></i> Twitter
+                            </a>
+                            <a href="">
+                                <i class="fa-brands fa-instagram"></i> Instagram
+                            </a>
+                            <a href="">
+                                <i class="fa-brands fa-quora"></i> Reviews on Quora
+                            </a>
+                        </div>
+                    </div>
+    
+                </div>
+                <div class="divide"></div>
+                <div class="courses">
+                    <h1 class="heading">
+                        Tutorials
+                    </h1>
+                    <div class="links">
+                        <a href="">Data Structures Tutorial</a> |
+                        <a href="">Python Tutorial</a> |
+                        <a href="">Java Tutorial</a> |
+                        <a href="">DBMS Tutorial</a> |
+                        <a href="">C Tutorial</a> |
+                        <a href="">JavaScript Tutorial</a> |
+                        <a href="">C++ Tutorial</a> |
+                        <a href="">SQL Tutorial</a> |
+                        <a href="">Data Science Tutorial</a> |
+                        <a href="">Software Engineering Tutorial</a> |
+                        <a href="">HTML Tutorial</a> |
+                        <a href="">CSS Tutorial</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            Copyright <span class="copy">&copy;</span> 2023 InterviewBit Technologies Pte. Ltd All Rights Reserved.
+        </div>
+    </footer>
+     <!-- all js files  -->
+    <!-- navbar js file link  -->
+    <script src="script/script.js"></script>
+    <!-- signup login js file link  -->
+    <script src="script/signup-login.js"></script>
+</body>
+</html>

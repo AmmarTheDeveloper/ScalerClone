@@ -1,0 +1,296 @@
+#journey{
+    padding:50px 20px;
+}
+#journey .main-container .container h1.heading{
+    margin-bottom:50px;
+}
+#journey .main-container .container .cards{
+    display:grid;
+    grid-template-columns:repeat(2 , 1.1fr) repeat(2 ,  1fr);
+    grid-template-rows:auto;
+    gap:20px;
+}
+#journey .main-container .container .cards .card{
+    background:url("../images/bg.jpg");
+    background-size:cover;
+    width:100%;
+    color:var(--white);
+    padding:20px;
+    border-radius:10px;
+}
+#journey .main-container .container .cards .card .index{
+    margin-bottom:120px;
+}
+#journey .main-container .container .cards .card .title{
+    font-size:2.4rem;
+    font-weight:700;
+    margin-bottom:20px;
+    max-width:150px;
+
+}
+#journey .main-container .container .cards .card .content .text{
+    font-size:1.6rem;
+    font-weight:500;
+}
+/* meet section starts here  */
+#meet{
+    padding:2rem;
+    background:#e7f3ff;
+}
+#meet .main-container .container h1.heading{
+    margin-bottom:15px;
+}
+#meet .main-container .container p.light{
+    font-weight:500;
+}
+#meet .main-container  .container .cards{
+    margin-top:40px;
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+#meet .main-container  .container .cards .card{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius:5px;
+    padding:30px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+    background:var(--white);
+    flex:1;
+    text-align:center;
+    transition:all 0.3s ease;
+}
+#meet .main-container .container  .cards .card:hover{
+    box-shadow: rgba(19,46,112,0.1) 0 1rem 4rem;
+}
+#meet .main-container .container  .cards .card .card-body .title{
+    display:inline-flex;
+    align-items:center;
+    column-gap:5px;
+}
+#meet .main-container .container .cards .card .card-body .title p.light{
+    font-size:16px;
+    font-weight:700;
+}
+#meet .main-container .container .cards .card .card-body .title img{
+    height:40px;
+}
+#meet .main-container .container .cards .card .card-body  .content{
+    margin-top:30px;
+    line-height:22px;
+}
+#meet .main-container .container .cards .card .card-body  .content p.light{
+    font-weight:600;
+    font-size:16px;
+}
+#meet .main-container .container .cards .card .card-body .content p.light b{
+    color:#52697c;
+}
+#meet .main-container .container .cards .card .link{
+    margin:10px 0;
+}
+#meet .main-container .container .cards .card .link .button{
+    color:var(--mainBlue);
+    font-size:18px;
+    transition:all 0.3s ease;
+    cursor:pointer;
+}
+#meet .main-container .container .cards .card .link .button:hover{
+    color:#0f8cff;
+}
+#meet .main-container .container .cards .card .social{
+    margin:10px 0;
+}
+#meet .main-container .container .cards .card .social p.light{
+    font-size:16px;
+    margin-bottom:25px;
+}
+#meet .main-container .container .cards .card .social .icons img{
+    height:30px;
+}
+#meet .main-container .container .cards .social .icons a{
+    margin-inline:5px;
+}
+#meet .main-container .container .btn-container{
+    text-align:center;
+    margin:25px 0 15px 0;
+}
+#meet .main-container .container .btn-container button{
+    padding:10px  20px;
+    max-width:100%;
+    width:200px;
+}
+/* courses section design starts here  */
+#courses{
+    padding:40px 20px;
+}
+#courses .main-container .container >  p.light{
+    margin:20px 0;
+    font-size:18px;
+    font-weight:600;
+}
+#courses .main-container .container > p.light .dark{
+    color:var(--black);
+    text-decoration:underline;
+    text-underline-offset:3px;
+    text-decoration-thickness:4px;
+    text-decoration-color:#0f8cff;
+}
+#courses .main-container .container :where(.cards , .mobile-cards){
+    margin-top:50px;
+    display:flex;
+    gap:20px;
+    padding:20px;
+    justify-content:center;
+}
+#courses .main-container .container .cards .card{
+    box-shadow: 0 0.2rem 0.4rem rgba(0,0,0,0.08);
+    border-radius:10px;
+    width:calc(100% / 4 - 20px);
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+    transition:all 0.3s ease;
+}
+#courses .main-container .container .cards .card:hover{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#courses .main-container .container .cards .card .image{
+    position:relative;
+    width:100%;
+}
+#courses .main-container .container .cards .card .image img{
+    width:100%;
+    object-fit:cover;
+    object-position:0  0;
+    height:130px;
+}
+#courses .main-container .container .cards  .card .image .name{
+    position:absolute;
+    bottom:0;
+    left:0;
+    font-size:14px;
+    color:var(--white);
+    padding:5px;
+    background: linear-gradient(90deg, rgba(0,140,255,0.72) 0%, rgba(92,182,255,0) 100%);
+    width:100%;
+    text-transform:uppercase; 
+}
+#courses .main-container .container .cards .card .content{
+    padding: 10px;
+    color:#1a2c47;
+}
+#courses .main-container .container :where(.cards .card .content .title , .mobile-cards .card .content .title){
+    font-size:16px;
+    font-weight:600;
+    text-align:left;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    color:var(--black);
+}
+#courses .main-container .container :where(.cards .card .content .enrolled , .mobile-cards .card .content .enrolled){
+    display:flex;
+    column-gap:5px;
+    color:var(--black);
+    align-items:center; 
+    margin:10px 0;
+    font-size:13px;
+    font-weight:500;
+}
+#courses .main-container .container :where(.cards .card .content .enrolled .icon img , .mobile-cards .card .content  .enrolled .icon img){
+    height:15px;
+}
+#courses .main-container .container .mobile-wrapper{
+    display:none;
+}
+#courses .main-container .container .button{
+    text-align:center;
+    margin-top:20px;
+}
+#courses .main-container .container .button button{
+    font-size:16px;
+    font-weight:600;
+}
+/* responsive design starts here  */
+@media screen and (max-width:1000px){
+    #journey .main-container .container .cards .card .content .title{
+        max-width:100%;
+    }
+    
+}
+@media screen and (max-width:768px){
+    #journey .main-container .container .cards{
+        grid-template-columns:repeat(2 , 1fr);
+        grid-template-rows:repeat(2 , auto);
+    }
+    #journey .main-container .container .cards .card .index{
+        margin-bottom:80px;
+    }
+    #meet .main-container .container .cards .card{
+        flex:100%;
+        max-width:100%;
+    }
+
+    /* courses design starts here  */
+    #courses .main-container .container .cards{
+        display:none;
+    }
+    #courses .main-container .container .mobile-wrapper{
+        display:block;
+        overflow:auto;
+    }
+    #courses .main-container .container .mobile-wrapper::-webkit-scrollbar {
+        display:none;
+    }
+    #courses .main-container .container .mobile-cards{
+        display:flex;
+        width:fit-content;
+    }
+    #courses{
+        background:#e7f3ff;
+        margin:40px 0;
+    }
+    #courses .main-container .container .mobile-cards .card{
+        display:flex;
+        column-gap:15px;
+        box-shadow:0 0.2rem 0.4rem rgba(0,0,0,0.08);
+        border-radius:15px;
+        width:250px;
+        padding:10px;
+        background:var(--white);
+        transition:all 0.3s ease;
+    }
+    #courses .main-container .container .mobile-cards .card:hover{
+        box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1);
+    }
+    #courses .main-containerr .container .mobile-cards .card .image{
+        width:fit-content;
+    }
+    #courses .main-container .container  .mobile-cards .card .content{
+        flex:1;
+        overflow:hidden;
+    }
+    #courses .main-container .container .mobile-cards .card .image img{
+        border-radius:10px;
+        width:60px;
+        height:60px;
+    }
+    #courses .main-container .container .mobile-cards .card .content .name{
+        font-size:12px;
+        margin:5px 0;
+        color:#5b6f81;
+        font-weight:500;
+    }
+    #courses .main-container .container  .mobile-cards .card .content .enrolled{
+        margin:0;
+    }
+}
+@media screen and (max-width:450px){
+    #journey .main-container .container .cards{
+        grid-template-columns:100%;
+        grid-template-rows:repeat(4 , auto);
+    }
+}

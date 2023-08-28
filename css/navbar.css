@@ -1,0 +1,551 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mulish", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    font-size: 62%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --white: white;
+    --crimson: crimson;
+    --blue: blue;
+    --black: black;
+    --ccc: #ccc;
+    --f0f0f0: #f0f0f0;
+    --f9f9f9: #f9f9f9;
+    --grey: grey;
+    --red: red;
+    --darkblue: darkblue;
+    --mainBlue: #0041ca;
+    --orange: orange;
+}
+
+.btn {
+    border: none;
+    padding-inline: 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--white);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.btn.btn-crimson {
+    background: var(--crimson);
+}
+
+.btn.btn-crimson:hover {
+    background: rgb(248, 30, 73);
+    box-shadow: 0 4px 10px rgba(248, 30, 73, 0.5);
+}
+
+h1.heading {
+    font-size: 3.3rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.underline {
+    position: relative;
+}
+
+.underline:before {
+    position: absolute;
+    content: '';
+    height: 15px;
+    width: 70%;
+    left: 50%;
+    top: 80%;
+    transform: translateX(-50%);
+    background: url("../images/underline.png");
+}
+
+.main-container {
+    width: 100%;
+    max-width: 120rem;
+    margin: auto;
+}
+
+.light {
+    color: #5b6f81;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* navbar design starts here  */
+.navbar {
+    background: var(--white);
+    height: 7rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    transition: all 0.5s ease;
+    z-index: 99;
+    position: static;
+}
+
+.navbar-alt {
+    display: none;
+    width: 100%;
+    height: 70px;
+}
+
+.navbar-alt.active {
+    display: block;
+}
+
+.navbar.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    animation-name: slide-in;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+@keyframes slide-in {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%)
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+        transform: translateY(0%)
+    }
+}
+
+.navbar .main-container {
+    display: flex;
+    align-items: center;
+    padding-inline: 20px;
+    height: 100%;
+}
+
+.navbar .logo {
+    max-width: 120px;
+    min-width: 50px;
+    margin-right: 4rem;
+}
+
+.navbar .logo img {
+    width: 100%;
+}
+
+.navbar .nav-container {
+    height: 100%;
+    display: flex;
+    flex: 1 0 0;
+}
+
+.navbar nav {
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.navbar nav a {
+    color: var(--black);
+    font-weight: 600;
+    margin-inline: 10px;
+    font-size: 1.6rem;
+    transition: all 0.3s ease;
+}
+
+.navbar nav a:hover,
+.navbar nav a.mentor-link {
+    color: var(--mainBlue);
+}
+
+/*for other pages like faqs mentor etc */
+.navbar nav .mentor-link {
+    float:right;
+    margin-right:15px;
+}
+
+.navbar .nav-btns {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    flex-shrink: 1;
+}
+
+.navbar .nav-btns .call {
+    display: none;
+}
+
+.navbar .nav-btns .google-play .google-play-icon {
+    border: 1px solid var(--mainBlue);
+    border-radius: 3px;
+    padding: 5px 5px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-basis: 40px;
+    max-width: 40px;
+    min-width: 30px;
+}
+
+.navbar .nav-btns .google-play .google-play-icon>img {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar .nav-btns .google-play-link {
+    position: absolute;
+    background: var(--white);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    top: 100px;
+    right: -30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    height: 155px;
+    width: 320px;
+    border-radius: 10px;
+    pointer-events: none;
+    opacity: 0;
+    z-index: 50;
+    transition: all 0.3s ease;
+}
+
+.navbar .nav-btns .google-play-link:before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    transform: rotate(45deg);
+    right: 35px;
+    border: 20px solid #f5f5f5;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    width: auto;
+    height: auto;
+}
+
+.navbar .nav-btns .google-play-icon:hover .google-play-link {
+    top: 80px;
+    opacity: 1;
+}
+
+.navbar .nav-btns .google-play-link>div {
+    width: 50%;
+}
+
+.navbar .nav-btns .google-play-link .content {
+    display: flex;
+    font-size: 1.6rem;
+    font-weight: 700;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.navbar .nav-btns .google-play-link .content img {
+    height: 50px;
+}
+
+.navbar .nav-btns .google-play-link .qr-code {
+    text-align: right;
+}
+
+.navbar .nav-btns .google-play-link .qr-code img {
+    max-height: 100%;
+}
+
+.navbar .nav-btns .btn {
+    border: none;
+    padding-inline: 2.2rem;
+    border-radius: 3px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--white);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+.navbar .nav-btns .apply-btn {
+    background: var(--crimson);
+    margin: 0 1rem;
+}
+
+.navbar .nav-btns .apply-btn:hover {
+    background: rgb(248, 30, 73);
+    box-shadow: 0 4px 10px rgba(248, 30, 73, 0.5);
+}
+
+.navbar .nav-btns .login-btn {
+    background: transparent;
+    border: 1px solid var(--mainBlue);
+    color: var(--mainBlue);
+}
+
+.navbar .nav-btns .login-btn:hover {
+    background: var(--mainBlue);
+    color: var(--white)
+}
+
+.navbar .nav-menu-btn {
+    display: none;
+}
+
+/* responsive design starts here  */
+@media screen and (min-width:1560px) {
+    .main-container {
+        max-width: 150rem;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media screen and (max-width:1023px) {
+    body.scroll-disabled {
+        overflow: hidden;
+    }
+
+    .navbar .main-container {
+        justify-content: space-between;
+    }
+
+    .navbar .main-container .logo {
+        margin-right: 2rem;
+    }
+
+    .navbar .nav-container {
+        position: fixed;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background: var(--white);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        height: 100vh;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        max-width: 300px;
+        padding: 17rem 20px 0 20px;
+        z-index: 99;
+        transition: all 0.3s ease;
+    }
+
+    .navbar .nav-container nav {
+        height: fit-content;
+    }
+
+    .navbar .nav-container .nav-btns {
+        align-items: flex-start;
+        height: fit-content;
+    }
+
+    .navbar .nav-menu-btn.active:before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.5);
+        height: 100vh;
+        width: 100%;
+        z-index: 90;
+    }
+
+    .navbar .nav-container.active {
+        right: 0;
+    }
+
+    .navbar .nav-container nav {
+        width: 100%;
+        flex: 0;
+    }
+
+    .navbar .nav-container nav a {
+        display: block;
+        width: 100%;
+        margin-top: 2rem;
+        margin-inline: 0;
+    }
+
+    .navbar .nav-container .nav-btns .google-play {
+        display: none;
+    }
+
+    .navbar .nav-container .nav-btns .call {
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+
+    .navbar .nav-container .nav-btns .call .icon-container {
+        background: var(--f0f0f0);
+        border-radius: 50%;
+        padding: 5px 7px;
+        color: black;
+    }
+
+    .navbar .nav-container .nav-btns .call .call-details p:first-child {
+        color: black;
+    }
+
+    .navbar .nav-container .nav-btns .call .call-details p:nth-child(2) {
+        color: var(--mainBlue);
+        transition: all 0.3s ease;
+    }
+
+    .navbar .nav-container .nav-btns .call .call-details p:nth-child(2):hover {
+        color: var(--darkblue);
+    }
+
+    .navbar .nav-container .nav-btns {
+        flex-direction: column;
+        column-gap: 20px;
+    }
+
+    .navbar .nav-container .nav-btns button {
+        height: 40px;
+        margin: 20px 0 10px 0;
+        font-size: 1.5rem;
+        font-weight: 500;
+        width: fit-content;
+        padding-inline: 10px;
+    }
+
+    .navbar .nav-container .nav-btns .login-btn {
+        margin: 1rem 0;
+    }
+
+    .navbar .nav-menu-btn {
+        display: flex;
+    }
+
+    .navbar .nav-menu-btn img {
+        height: 35px;
+    }
+
+    .navbar .nav-menu-btn .lines {
+        position: relative;
+        width: 25px;
+        margin-left: 20px;
+        height: 30px;
+        cursor: pointer;
+        z-index: 99;
+    }
+
+    .navbar .nav-menu-btn .lines .line {
+        position: absolute;
+        height: 2px;
+        left: 0;
+        background: var(--mainBlue);
+        width: 100%;
+        transition: all 0.3s ease;
+    }
+
+    .navbar .nav-menu-btn .lines .line-1 {
+        top: 25%;
+    }
+
+    .navbar .nav-menu-btn .lines .line-2 {
+        top: 50%;
+    }
+
+    .navbar .nav-menu-btn .lines .line-3 {
+        top: 75%;
+    }
+
+    .navbar .nav-menu-btn.active .lines .line-1 {
+        rotate: 45deg;
+        top: 50%;
+    }
+
+    .navbar .nav-menu-btn.active .lines .line-2 {
+        left: -100%;
+        opacity: 0;
+    }
+
+    .navbar .nav-menu-btn.active .lines .line-3 {
+        rotate: -45deg;
+        top: 50%;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .navbar .nav-menu-btn {
+        align-items: center;
+    }
+
+    .navbar .nav-menu-btn img {
+        width: auto;
+        height: 30px;
+    }
+
+    .navbar .nav-menu-btn .lines {
+        margin-left: 10px;
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    .navbar nav a {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        height: 100%;
+    }
+
+    .navbar nav a:before,
+    .navbar nav a:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        height: 5px;
+        background: #387ef7;
+        width: 0;
+        transition: all 0.3s ease;
+    }
+
+    .navbar nav a:before {
+        left: 50%;
+    }
+
+    .navbar nav a:after {
+        right: 50%;
+    }
+
+    .navbar nav a.active:before,
+    .navbar nav a.active:after {
+        width: 50%;
+    }
+
+    .navbar nav a.active {
+        color: #387ef7;
+    }
+
+}

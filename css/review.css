@@ -1,0 +1,260 @@
+#reviews{
+    margin-top:40px;
+    padding:0 20px 20px 20px;
+}
+#reviews .main-container .container .searched{
+    margin:20px 0;
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    align-items:center;
+}
+#reviews .main-container .container .searched span.title{
+    font-size:1.6rem;
+    font-weight:300;
+    color:var(--black);
+    
+}
+#reviews .main-container .container .searched a{
+    background:#f6f7fb;
+    color:black;
+    cursor:pointer;
+    font-weight:600;
+    transition:background  0.3s ease;
+    padding:1rem 2rem;
+    border-radius:25px;
+    font-size:1.6rem;
+    border:1px solid  transparent;
+}
+#reviews .main-container .container .searched a:hover{
+    background:#ebf1f5;
+    border-color:#d4dce6;
+}
+#reviews .main-container .container .card-container{
+    margin-top:50px;
+    display:flex;
+    padding:20px 0 20px 10px;
+    overflow:auto;
+}
+#reviews .main-container .container .card-container .card{
+    box-shadow:0.4rem 0.7rem 2.8rem 0 rgba(68,77,91,0.14);
+    padding:2rem;
+    border-radius:5px;
+    flex-shrink:0;
+    width:calc(100% / 4 - 20px);
+    transform:scale(1);
+    margin-right:2rem;
+    cursor:pointer;
+    transition:all 0.1s ease;
+}
+#reviews .main-container .container .card-container .card:hover{
+    transform:scale(1.02);
+}
+#reviews .main-container  .container .card-container .card .hike{
+    text-align:right;
+    font-size:1.4rem;
+    font-weight:500;
+    color:green;
+    margin-bottom:10px;
+}
+#reviews .main-container .container .card-container  .card .hike .hike-content{
+    border:1px solid var(--grey);
+    padding:0.5rem;
+    border-radius:3px;
+    text-align:center;
+}
+
+#reviews .main-container .container .card-container .card .image{
+    width:100%;
+    text-align:center;
+}
+#reviews .main-container .container .card-container .card .image img{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    object-fit:cover;
+    position:relative;
+    box-shadow: 0 0 0 4px var(--white) , 0  0 4px 2px rgba(0,0,0,0.5);
+}
+#reviews .main-container .container .card-container .card .content{
+    margin-top:10px;
+    text-align:center;
+}
+
+#reviews .main-container .container .card-container .card .content .title{
+    font-size:2rem;
+    font-weight:600;
+    color:var(--black) !important;
+}
+#reviews .main-container .container .card-container .card .content .date{
+    font-size:1.6rem;
+    color:var(--black);
+    font-weight:400;
+}
+#reviews .main-container  .container .card-container .card .pre-post{
+    margin-top:15px;
+    text-align:center;
+}
+#reviews .main-container .container  .light{
+    color:var(--grey);
+    font-size:1.5rem;
+    font-weight:400;
+    text-align:center;
+}
+#reviews .main-container .container .card-container .card .pre p:not(.light){
+    font-size:1.6rem;
+    color:var(--black);
+    font-weight:500;
+}
+#reviews .main-container .container .card-container .card .down-arrow{
+    margin-top:10px;
+}
+#reviews .main-container .container .card-container .card .down-arrow img{
+    height:5rem;
+}
+#reviews .main-container .container .card-container .card .post p.light{
+    font-size:1.4rem;
+    margin-bottom:10px;
+}
+#reviews .main-container .container .card-container .card .post img{
+    max-width:100%;
+    height:4.6rem;
+}
+#reviews .main-container .container .card-container .card  .detail{
+    margin-top:10px;
+    font-size:1.8rem;
+    font-weight:600;
+    color:var(--black);
+}
+#reviews .main-container .container .button{
+    text-align:center;
+    margin-top:20px;
+}
+#reviews .main-container .container .button .btn{
+    padding:10px;
+    width:300px;
+}
+#reviews .main-container .container .container-2{
+    margin-top:40px;
+}
+#reviews .main-container .container .container-2 h1.heading{
+    display:flex;
+    column-gap:5px;
+    text-align:center;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin-bottom:20px;
+}
+#reviews .main-container .container .container-2 b{
+    position:relative;
+}
+#reviews .main-container .container .container-2 b:before{
+    position:absolute;
+    content:'';
+    height:15px;
+    width:70%;
+    left:50%;
+    top:90%;
+    transform:translateX(-50%);
+    background: url("../images/underline.png");
+}
+#reviews .main-container .container .container-2 .light{
+    margin:5px 0;
+    font-size:1.6rem;
+}
+#reviews .main-container .container .container-2 .reviews-container{
+    margin-top:40px;
+    overflow:auto;
+}
+#reviews .main-container .container .container-2 .reviews-container .row{
+    display:flex;
+    padding:10px;
+    column-gap:15px;
+}
+#reviews .main-container .container .container-2 .reviews-container .row:first-child{
+    margin-bottom:10px;
+}
+#reviews .main-container .container .container-2 .reviews-container .row .review{
+    border:1px solid var(--ccc);
+    border-radius:5px;
+    padding:20px;
+    width:36rem;
+    display:flex;
+    flex-direction:column;
+    row-gap:15px;
+    transition:all 0.3s ease;
+    flex-shrink:0;
+}
+#reviews .main-container .container .container-2 .reviews-container .row .review .details{
+    display:flex;
+    column-gap:10px;
+}
+#reviews .main-container .container .container-2 .reviews-container .row  .review .details .image img{
+    width:80px;
+    height:80px;
+    object-fit:cover;
+    border-radius:50%;
+}
+#reviews .main-container .container .container-2 .reviews-container .row .review .details .content h1{
+    font-size:1.8rem;
+    font-weight:600;
+    color:var(--black);
+}
+#reviews .main-container .container .container-2 .reviews-container .row  .review .details p{
+    text-align:start;
+}
+#reviews .main-container .container .container-2 .reviews-container .row  .review .details .logo{
+    margin-left:auto;
+}
+#reviews .main-container .container .container-2 .reviews-container .row .review .details .logo img{
+    width:40px;
+}
+#reviews .main-container .container .container-2 .reviews-container .row .review .details .content img{
+    height:25px;
+}
+#reviews .main-container .container .container-2 .reviews-container .row .review  .about{
+    font-size:1.6rem;
+    color:var(--black);
+    flex:1 0 0;
+    padding-bottom:1.5rem;
+    transition:all 0.3s ease;
+}
+#reviews .main-container .container .container-2 .reviews-container .row .review .link{
+    border-top:1px solid var(--ccc);
+    padding-top:1.5rem;
+    font-size:1.8rem;
+    color:var(--mainBlue);
+    transition:all 0.3s ease;
+}
+#reviews .main-container .container .container-2 .reviews-container .row  .review .link a{
+    color: inherit;
+    font-weight:600;
+    transition:all 0.3s ease;
+}
+#reviews .main-container .container .container-2 .reviews-container .row .review:hover{
+    box-shadow: rgba(19,46,112,0.1) 0 1rem 4rem 0;
+}
+#reviews .main-container .container .container-2 .reviews-container .row .review:hover .link{
+    color:#387ef7;
+    border-color:#387ef7;
+}
+
+/* responsive design starts  here  */
+@media screen and (min-width:992px){
+    #reviews .main-container .container .card-container .card{
+        width:calc(100% / 4 - 20px);
+    }
+}
+@media screen and (max-width:768px){
+    #reviews .main-container .container .button .btn{
+        width:100%;
+    }
+    #reviews .main-container .container .card-container .card{
+        width:calc(100% / 2 - 20px);
+    }
+}
+@media screen and (max-width:500px){
+    #reviews .main-container .container .card-container .card{
+        width:calc(100% - 10px);
+    }
+}

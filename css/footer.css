@@ -1,0 +1,122 @@
+footer{
+    background:#202738;
+}
+footer .container{
+    padding:20px;
+}
+footer .row{
+    display:flex;
+    justify-content:space-between;
+    padding:3rem 0;
+}
+footer .row .col{
+    width:fit-content;
+    max-width:calc(100% / 4 - 20px);
+}
+footer .col:first-child .logo-link img{
+    height:50px;
+    background:#fff;
+}
+footer .col:first-child  p{
+    color:var(--white);
+    font-weight:600;
+    font-size:18px;
+    margin:10px 0;
+}
+footer .col:first-child .logo-img{
+    height:50px;
+    background:#fff;
+}
+footer .col:first-child .app{
+    margin-top:25px;
+    display:flex;
+    column-gap:10px;
+}
+footer .col:first-child .app  .left p{
+    font-size:15px;
+}
+footer .col:first-child .app .left img{
+    height:40px;
+    width:100%;
+}
+footer .col:first-child .app .right img{
+    height:80px;
+}
+footer .col .heading{
+    font-size:25px;
+    font-weight:500;
+    color:var(--white);
+    text-align:left;
+}
+footer .col .links{
+    margin:20px 0 15px 0;
+}
+footer .links a{
+    display:block;
+    font-size:16px;
+    color:#a2b8ee;
+    margin-bottom:8px;
+}
+footer .col:nth-child(4) .links a{
+    display:grid;
+    grid-template-columns:20px auto;
+    grid-template-rows:auto;
+    column-gap:5px;
+    font-size:16px;
+}
+footer .col:nth-child(4) .links a i{
+    font-size:16px;
+}
+footer .divide{
+    width:100%;
+    height:1px;
+    background:#a2b8ee;
+}
+footer .courses{
+    padding:5rem 0;
+}
+footer .courses .heading{
+    text-align:left;
+    color:white;
+    font-size:2.4rem;
+}
+footer .courses  .links{
+    margin:1.5rem 0;
+    color:#a2b8ee;
+    font-size:16px;
+}
+footer .courses .links a{
+    display:inline-block;
+    margin:0;
+}
+/* copyright design starts here  */
+.copyright{
+    background:#181f30;
+    padding:20px;
+    color:#5b6f81;
+    font-size:1.7rem;
+    text-align:center;
+}
+.copyright span.copy{
+    color:#a2b8ee;
+}
+@media screen and (max-width:992px){
+    footer .row{
+        display:grid;
+        grid-template-columns: repeat(2 , 50%);
+        grid-template-rows:repeat(2 , auto);
+        gap:20px;
+    }
+    footer .row .col{
+        max-width:1000px;
+    }
+}
+@media screen and (max-width:600px){
+    footer .row{
+        grid-template-columns:auto;
+        grid-template-rows:repeat(4, auto);
+    }
+    footer .container{
+        padding-inline:20px;
+    }
+}
